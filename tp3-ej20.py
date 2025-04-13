@@ -29,7 +29,7 @@ def ingresar_numero() -> str:
         # Solicita al usuario que ingrese un número 
         # y se asegura de que sea válido (solo dígitos).
         try:
-            entrada = ("Ingrese numero: ")
+            entrada = input("Ingrese numero: ")
             if entrada.isdigit(): # Verifica que todos los caracteres sean dígitos (0–9)
                 return entrada # Devuelve el número como cadena de texto
         except ValueError:
@@ -74,4 +74,5 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
 
