@@ -27,12 +27,12 @@ def main() -> None:
     veces = ingresar_cantidad_de_repeticiones()
 
     for i in range(1, veces+1):
-        # Si la iteracion es para, usamos .title()
-        # para poner la primera letra de cada palabra
-        # en mayuscula
+        # Si el número de repetición es par, aplicar .title() 
+        # para poner en mayúscula la primera letra de cada palabra.
         if i % 2 == 0:
             print(frase.title())
         else:
+            # Si es impar, imprimir la frase tal como fue ingresada.
             print(frase)
 
 
