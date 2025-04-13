@@ -20,6 +20,9 @@ def es_primo(numero: int) -> bool:
     if numero < 2:
         return False
     
+    # alternativa eficiente: 
+    # for i in range(2, int(numero ** 0.5) + 1):
+
     for i in range(2, (int)(numero/2) + 1):
         if numero % i == 0:
             return False
